@@ -1,0 +1,16 @@
+{
+  "extends": [
+    "stylelint-config-standard-scss",
+    "stylelint-config-prettier-scss"
+  ],
+  "rules": {
+    "color-named": null,
+    "color-no-hex": true,
+    "block-no-empty": true,
+    "value-keyword-case": "lower",
+    "comment-no-empty": true,
+    "hue-degree-notation": null,
+    "alpha-value-notation": "number",
+    "no-empty-source": true
+  }
+}
