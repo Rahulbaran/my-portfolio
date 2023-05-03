@@ -35,6 +35,14 @@
       "not IE 11"
     ]
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rahulbaran/my-portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Rahulbaran/my-portfolio/issues"
+  },
+  "homepage": "https://github.com/Rahulbaran/my-portfolio#readme",
   "devDependencies": {
     "@vitejs/plugin-legacy": "^4.0.3",
     "autoprefixer": "^10.4.14",
