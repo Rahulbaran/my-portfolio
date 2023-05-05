@@ -46,6 +46,47 @@
     <script type="module" src="/src/js/main.js" defer></script>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <header>
+        <div class="logo-container">
+          <a href="/" class="logo">
+            <picture>
+              <source srcset="/favicons/logo.avif" type="image/avif" />
+              <source srcset="/favicons/logo.webp" type="image/webp" />
+              <img
+                src="/favicons/logo.png"
+                alt="Logo"
+                loading="eager"
+                width="64"
+                height="64"
+              />
+            </picture>
+          </a>
+        </div>
+
+        <div class="navigation-container">
+          <nav class="navigation">
+            <ul class="navigation-menu">
+              <li><a href="/" class="navigation-link">Home</a></li>
+              <li><a href="#about" class="navigation-link">About</a></li>
+              <li><a href="#projects" class="navigation-link">Projects</a></li>
+              <li><a href="#contact" class="navigation-link">Contact</a></li>
+            </ul>
+          </nav>
+
+          <div class="resume-link-wrapper">
+            <a href="/favicons/logo.png"> Resume</a>
+          </div>
+        </div>
+
+        <div class="hamburger-btn-wrapper">
+          <button>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </header>
+    </div>
   </body>
 </html>
