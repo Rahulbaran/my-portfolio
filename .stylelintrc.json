@@ -11,7 +11,8 @@
     "comment-no-empty": true,
     "hue-degree-notation": null,
     "alpha-value-notation": "number",
-    "no-empty-source": true
+    "no-empty-source": true,
+    "comment-empty-line-before": null
   },
   "ignoreFiles": ["node_modules/**/**/*.{scss,css}", "dist/"]
 }
