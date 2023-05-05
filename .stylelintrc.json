@@ -12,5 +12,6 @@
     "hue-degree-notation": null,
     "alpha-value-notation": "number",
     "no-empty-source": true
-  }
+  },
+  "ignoreFiles": ["node_modules/**/**/*.{scss,css}", "dist/"]
 }
