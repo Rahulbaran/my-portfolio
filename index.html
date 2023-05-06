@@ -47,26 +47,26 @@
   </head>
   <body>
     <div id="app">
-      <header>
-        <div class="logo-container">
-          <a href="/" class="logo">
-            <picture>
-              <source srcset="/favicons/logo.avif" type="image/avif" />
-              <source srcset="/favicons/logo.webp" type="image/webp" />
-              <img
-                src="/favicons/logo.png"
-                alt="Logo"
-                loading="eager"
-                width="64"
-                height="64"
-              />
-            </picture>
-          </a>
-        </div>
+      <header class="flex justify-space-between align-center header">
+        <a href="/" class="logo" title="logo">
+          <picture>
+            <source srcset="/favicons/logo.avif" type="image/avif" />
+            <source srcset="/favicons/logo.webp" type="image/webp" />
+            <img
+              src="/favicons/logo.png"
+              alt="Logo"
+              loading="eager"
+              width="48"
+              height="48"
+            />
+          </picture>
+        </a>
 
-        <div class="navigation-container">
+        <div
+          class="flex flex-col align-center gap-y-6 gap-x-3 navigation-container"
+        >
           <nav class="navigation">
-            <ul class="navigation-menu">
+            <ul class="flex flex-col align-center gap-3 navigation-menu">
               <li><a href="/" class="navigation-link">Home</a></li>
               <li><a href="#about" class="navigation-link">About</a></li>
               <li><a href="#projects" class="navigation-link">Projects</a></li>
