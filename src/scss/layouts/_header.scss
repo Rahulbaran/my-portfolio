@@ -1,0 +1,115 @@
+.header {
+  position: fixed;
+  inset-inline: 0;
+  inset-block-start: 0;
+  padding: calc(var(--base-padding) * 2) calc(var(--base-padding) * 3);
+  container: header / inline-size;
+}
+
+/* Logo */
+.logo img {
+  inline-size: 3.25em;
+  block-size: 3.25em;
+}
+
+/* Hamburger Button */
+.hamburger-btn-wrapper {
+  z-index: 10;
+}
+
+.hamburger-btn {
+  background-color: transparent;
+  border: none;
+
+  span {
+    height: 0.25em;
+    border-radius: var(--base-br);
+    background-image: linear-gradient(to right, var(--hamburger-bg-img));
+    background-color: var(--hamburger-bg);
+    box-shadow: 0 0 3px hwb(var(--shadow) / 0.25);
+
+    &:first-of-type,
+    &:last-of-type {
+      width: 2.5em;
+      transition: rotate 0.2s ease-out;
+    }
+
+    &:nth-of-type(2) {
+      width: 2em;
+      transition: opacity 0.15s ease-out, translate 0.2s ease-out;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.animated-hamburger-btn {
+  gap: 0;
+
+  span:first-of-type {
+    rotate: z 405deg;
+  }
+
+  span:nth-of-type(2) {
+    opacity: 0;
+    translate: -30px;
+  }
+
+  span:last-of-type {
+    rotate: z -405deg;
+  }
+}
+
+/* Navigation */
+.navigation-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  block-size: 100vh;
+  background-color: var(--navigation-bg);
+  padding-block-start: calc(var(--base-padding) * 16);
+  padding-inline: calc(var(--base-padding) * 14);
+  box-shadow: -1px 0 10px hwb(var(--shadow) / 0.15);
+}
+
+.navigation-menu {
+  list-style-type: none;
+}
+
+.navigation-link {
+  font-size: calc(var(--base-fs) * 1.4);
+  padding: calc(var(--base-padding) * 0.25);
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  transition: opacity 100ms ease-in-out;
+
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
+/* Container Queries */
+@container header (min-width: 768.001px) {
+  .hamburger-btn-wrapper {
+    display: none;
+  }
+
+  .navigation-container {
+    position: relative;
+    block-size: auto;
+    padding: 0;
+    background-color: transparent;
+    box-shadow: none;
+    flex-direction: row;
+  }
+
+  .navigation-menu {
+    flex-direction: row;
+  }
+
+  .navigation-link {
+    font-size: calc(var(--base-fs) * 1.05);
+  }
+}
