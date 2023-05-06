@@ -1,0 +1,48 @@
+:root {
+  --base-fs: 1rem;
+  --base-padding: 0.5em;
+  --base-margin: 0.5em;
+  --base-br: 20px;
+  --base-lh: 1.5;
+  --base-gap: 0.5em;
+
+  /* Font Weights */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi: 600;
+  --fw-bold: 700;
+  --fw-xbold: 800;
+  --fw-black: 900;
+
+  /* Font Stacks */
+  --fs-space-grotesk: "Space Grotesk", serif;
+
+  /* Color Palletes */
+  /* Light Mode Color Pallete */
+  --lightest-blue: hwb(0 95% 0%);
+  --light-blue: hwb(250 88% 0%);
+  --regular-blue: hwb(224 56% 9%);
+  --blue: hwb(228 45% 17%);
+
+  /* Dark Mode Color Pallete */
+  --lightest-orange: hwb(37 89% 6%);
+  --light-orange: hwb(37 81% 11%);
+  --regular-cyan: hwb(178 39% 50%);
+  --dark-cyan: hwb(187 34% 55%);
+
+  /* Website Colors */
+  --shadow: 0 0% 100%;
+  --body-bg: var(--lightest-blue);
+
+  @media (prefers-color-scheme: dark) {
+    --body-bg: var(--dark-cyan);
+    --link-color: var(--lightest-orange);
+    --text-color: var(--light-orange);
+    --heading-color: var(--lightest-orange);
+
+    /* Header */
+    --hamburger-bg-img: var(--lightest-orange), var(--light-orange);
+    --hamburger-bg: var(--light-orange);
+    --navigation-bg: var(--regular-cyan);
+  }
+}
