@@ -3,7 +3,6 @@
   inset-inline: 0;
   inset-block-start: 0;
   padding: calc(var(--base-padding) * 2) calc(var(--base-padding) * 3);
-  container: header / inline-size;
 }
 
 /* Logo */
@@ -22,7 +21,7 @@
   border: none;
 
   span {
-    height: 0.25em;
+    height: 0.27em;
     border-radius: var(--base-br);
     background-image: linear-gradient(to right, var(--hamburger-bg-img));
     background-color: var(--hamburger-bg);
@@ -72,6 +71,11 @@
   padding-block-start: calc(var(--base-padding) * 16);
   padding-inline: calc(var(--base-padding) * 14);
   box-shadow: -1px 0 10px hwb(var(--shadow) / 0.15);
+  display: none;
+
+  &.navigation-visible {
+    display: flex;
+  }
 }
 
 .navigation-menu {
@@ -91,7 +95,7 @@
 }
 
 /* Container Queries */
-@container header (min-width: 768.001px) {
+@media screen and (width > 768px) {
   .hamburger-btn-wrapper {
     display: none;
   }
