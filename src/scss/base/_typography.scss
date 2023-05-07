@@ -31,3 +31,9 @@ audio {
 strong {
   font-weight: var(--fw-semi);
 }
+
+.container {
+  padding-block-start: calc(var(--base-margin) * 18);
+  inline-size: min(90vw, 992px);
+  margin-inline: auto;
+}
