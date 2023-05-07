@@ -114,6 +114,6 @@
   }
 
   .navigation-link {
-    font-size: calc(var(--base-fs) * 1.05);
+    font-size: var(--base-fs);
   }
 }
