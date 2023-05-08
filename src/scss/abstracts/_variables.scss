@@ -29,6 +29,7 @@
   --light-orange: hwb(37 81% 20%);
   --regular-cyan: hwb(178 39% 50%);
   --dark-cyan: hwb(187 34% 55%);
+  --darkest-cyan: hwb(187 15% 60%);
 
   /* Website Colors */
   --shadow: 0 0% 100%;
@@ -44,5 +45,9 @@
     --hamburger-bg-img: var(--lightest-orange), var(--light-orange);
     --hamburger-bg: var(--light-orange);
     --navigation-bg: var(--regular-cyan);
+
+    /* Buttons */
+    --primary-btn-text: var(--lightest-orange);
+    --primary-btn-bg: var(--darkest-cyan);
   }
 }

@@ -1,0 +1,19 @@
+.btn {
+  padding: calc(var(--base-padding) * 1.35) calc(var(--base-padding) * 2);
+  font-size: calc(var(--base-fs) * 1.15);
+  color: var(--btn-text-color);
+  background-color: var(--btn-bg);
+  border-radius: calc(var(--base-br) * 0.2);
+  box-shadow: 0 0 4px hwb(var(--shadow) / 0.2);
+  transition: box-shadow 150ms ease-out, translate 200ms ease-out;
+
+  &-primary {
+    --btn-text-color: var(--primary-btn-text);
+    --btn-bg: var(--primary-btn-bg);
+  }
+
+  &:hover {
+    box-shadow: 2px 2px 5px hwb(var(--shadow) / 0.15);
+    translate: 0 -4px;
+  }
+}
