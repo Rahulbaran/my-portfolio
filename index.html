@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="" />
-    <meta name="description" content="This is my portfolio website created using scss & Javascript and It is deployed on Vercel" />
+    <meta
+      name="description"
+      content="This is my portfolio website created using scss & Javascript and It is deployed on Vercel"
+    />
     <meta name="author" content="Rahul Kumar" />
     <meta name="contact" content="rahulkumar109422@gmail.com" />
 
@@ -47,7 +50,9 @@
   </head>
   <body>
     <div id="app">
-      <header class="flex justify-space-between align-center header">
+      <header
+        class="flex justify-space-between align-center header navigation-header"
+      >
         <a href="/" class="logo" title="logo">
           <picture>
             <source srcset="/favicons/logo.avif" type="image/avif" />
@@ -75,7 +80,9 @@
           </nav>
 
           <div class="resume-link-wrapper">
-            <a href="/resume.pdf" class="btn btn-primary" role="button"> Resume</a>
+            <a href="/resume.pdf" class="btn btn-primary" role="button">
+              Resume</a
+            >
           </div>
         </div>
 
@@ -89,7 +96,7 @@
       </header>
 
       <main class="container">
-        <section class="home-wrapper">
+        <section class="section-wrapper home-wrapper">
           <div class="intro">
             <p>Namaste, I am</p>
             <h1 class="flex flex-col">
@@ -110,7 +117,21 @@
           </div>
         </section>
 
-        <section class="about-wrapper"></section>
+        <section class="section-wrapper about-wrapper">
+          <h2 class="flex align-center justify-center gap-1 section-heading">
+            <span></span>
+            <span>About Me</span>
+            <span></span>
+          </h2>
+        </section>
+
+        <section class="section-wrapper projects-wrapper">
+          <h2 class="flex align-center justify-center gap-1 section-heading">
+            <span></span>
+            <span>Projects</span>
+            <span></span>
+          </h2>
+        </section>
       </main>
     </div>
   </body>
