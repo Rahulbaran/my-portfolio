@@ -71,8 +71,7 @@
   right: 0;
   block-size: 100vh;
   background-color: var(--navigation-bg);
-  padding-block-start: calc(var(--base-padding) * 16);
-  padding-inline: calc(var(--base-padding) * 14);
+  padding-inline: calc(var(--base-padding) * 10);
   box-shadow: -1px 0 10px hwb(var(--shadow) / 0.15);
   display: none;
 
@@ -97,6 +96,14 @@
   }
 }
 
+.resume-link-wrapper a {
+  letter-spacing: 0.5px;
+
+  @media screen and (width <= 768px) {
+    padding-inline: calc(var(--base-padding) * 6);
+  }
+}
+
 /* Container Queries */
 @media screen and (width > 768px) {
   .hamburger-btn-wrapper {
@@ -118,5 +125,9 @@
 
   .navigation-link {
     font-size: var(--base-fs);
+  }
+
+  .resume-link-wrapper a {
+    padding-block: calc(var(--base-padding) * 1.1);
   }
 }
