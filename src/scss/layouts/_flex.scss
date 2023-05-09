@@ -14,10 +14,16 @@ $justify: flex-end, center, space-between, space-around, space-evenly;
 }
 
 @for $gap from 1 through 10 {
-  .gap-#{$gap},
-  .gap-x-#{$gap},
-  .gap-y-#{$gap} {
+  .gap-#{$gap} {
     gap: calc(var(--base-gap) * #{$gap});
+  }
+
+  .gap-x-#{$gap} {
+    gap: 0 calc(var(--base-gap) * #{$gap});
+  }
+
+  .gap-y-#{$gap} {
+    gap: calc(var(--base-gap) * #{$gap}) 0;
   }
 }
 
