@@ -1,6 +1,7 @@
 .home-wrapper {
   .intro {
     margin-block-end: calc(var(--base-margin) * 3);
+    animation: intro-animation 1500ms ease-out 1;
 
     p {
       word-spacing: 5px;
@@ -26,9 +27,32 @@
 
   .details {
     inline-size: min(90%, 32em);
+    animation: details-animation 1500ms ease-out 1;
 
     a {
       margin-block-start: calc(var(--base-margin) * 6);
     }
+  }
+}
+
+/* Media query */
+@media (prefers-reduced-motion) {
+  .details,
+  .intro {
+    animation: none;
+  }
+}
+
+/* Keyframes */
+@keyframes intro-animation {
+  from {
+    translate: 0 -50px;
+    opacity: 0;
+  }
+}
+@keyframes details-animation {
+  from {
+    translate: 0 50px;
+    opacity: 0;
   }
 }
