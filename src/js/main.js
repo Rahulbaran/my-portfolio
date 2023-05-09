@@ -28,7 +28,7 @@ selectors.hamburgerBtn.addEventListener("click", function () {
 window.addEventListener("scroll", () => {
   if (document.documentElement.scrollTop > 50 || document.body.scrollTop > 50) {
     selectors.navigationHeader.style.boxShadow =
-      "0 2px 5px hwb(0 0% 100% / .15)";
+      "0 3px 8px hwb(0 0% 100% / .15)";
   } else {
     selectors.navigationHeader.style.boxShadow = "none";
   }
