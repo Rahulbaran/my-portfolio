@@ -117,6 +117,7 @@
     background-color: transparent;
     box-shadow: none;
     flex-direction: row;
+    gap: 0 calc(var(--base-gap) * 3);
   }
 
   .navigation-menu {
