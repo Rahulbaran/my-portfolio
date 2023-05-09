@@ -8,6 +8,8 @@
 
 html {
   font-size: 75%;
+  scrollbar-width: thin;
+  scrollbar-color: var(--scroll-thumb-bg) transparent;
 
   @media screen and (width > 30em) {
     font-size: 87.5%;
@@ -49,4 +51,19 @@ body {
   font-weight: var(--fw-regular);
   line-height: var(--base-lh);
   background-color: var(--body-bg);
+}
+
+::-webkit-scrollbar {
+  inline-size: 10px;
+  block-size: 10px;
+
+  &-thumb {
+    background-color: var(--scroll-thumb-bg);
+    border-radius: calc(var(--base-br) * 0.35);
+  }
+
+  &-track {
+    background-color: transparent;
+    box-shadow: 0 0 8px hwb(var(--shadow) / 0.15) inset;
+  }
 }
