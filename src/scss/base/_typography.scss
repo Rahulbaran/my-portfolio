@@ -37,7 +37,7 @@ strong {
 }
 
 .container {
-  padding-block-start: calc(var(--base-padding) * 22);
+  padding-block: calc(var(--base-padding) * 22) calc(var(--base-padding) * 20);
   inline-size: min(90vw, 992px);
   margin-inline: auto;
 
