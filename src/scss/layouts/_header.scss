@@ -6,6 +6,7 @@
   background-color: var(--header-bg);
   backdrop-filter: blur(4px);
   padding: calc(var(--base-padding) * 2) calc(var(--base-padding) * 3);
+  transition: box-shadow 250ms ease-in-out;
 }
 
 /* Logo */
