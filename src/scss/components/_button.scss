@@ -1,5 +1,5 @@
 .btn {
-  padding: calc(var(--base-padding) * 1.75) calc(var(--base-padding) * 2.5);
+  padding: calc(var(--base-padding) * 1.75) calc(var(--base-padding) * 2);
   font-size: calc(var(--base-fs) * 1.25);
   color: var(--btn-text-color);
   background-color: var(--btn-bg);
@@ -13,12 +13,12 @@
   }
 
   &:hover {
-    box-shadow: 2px 2px 5px hwb(var(--shadow) / 0.15);
-    translate: 0 -4px;
+    box-shadow: 3px 3px 4px hwb(var(--shadow) / 0.25);
+    translate: 0 -5px;
   }
 
   @media screen and (width > 768px) {
-    padding-block: calc(var(--base-padding) * 1.25);
+    padding-block: calc(var(--base-padding) * 1.35);
     font-size: calc(var(--base-fs) * 1.05);
   }
 }
