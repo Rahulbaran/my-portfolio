@@ -104,7 +104,13 @@
   }
 }
 
-/* Container Queries */
+/* Media Queries */
+@media (prefers-reduced-motion) {
+  .navigation-menu {
+    animation: none;
+  }
+}
+
 @media screen and (width > 768px) {
   .hamburger-btn-wrapper {
     display: none;
@@ -122,6 +128,7 @@
 
   .navigation-menu {
     flex-direction: row;
+    animation: navigation-animation 500ms ease-out 1;
   }
 
   .navigation-link {
@@ -130,5 +137,13 @@
 
   .resume-link-wrapper a {
     padding-block: calc(var(--base-padding) * 1.1);
+  }
+}
+
+/* Keyframes */
+@keyframes navigation-animation {
+  from {
+    translate: -50px 0;
+    opacity: 0;
   }
 }
