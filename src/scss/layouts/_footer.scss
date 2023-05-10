@@ -2,6 +2,8 @@
   padding-block-end: calc(var(--base-padding) * 3);
 
   .social-link {
+    transition: opacity 250ms ease;
+
     i {
       font-size: calc(var(--base-fs) * 1.9);
     }
