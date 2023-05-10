@@ -1,0 +1,19 @@
+.footer {
+  padding-block-end: calc(var(--base-padding) * 3);
+
+  .social-link {
+    i {
+      font-size: calc(var(--base-fs) * 1.7);
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  @media screen and (width > 768px) {
+    .social-link i {
+      font-size: calc(var(--base-fs) * 1.5);
+    }
+  }
+}
