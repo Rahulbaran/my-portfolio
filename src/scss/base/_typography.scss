@@ -42,7 +42,7 @@ strong {
   margin-inline: auto;
 
   .section-wrapper:not(:last-of-type) {
-    margin-block-end: calc(var(--base-margin) * 20);
+    margin-block-end: calc(var(--base-margin) * 26);
   }
 
   .section-heading {
@@ -70,7 +70,7 @@ strong {
     }
 
     .section-wrapper:not(:last-of-type) {
-      margin-block-end: calc(var(--base-margin) * 14);
+      margin-block-end: calc(var(--base-margin) * 18);
     }
   }
 }
