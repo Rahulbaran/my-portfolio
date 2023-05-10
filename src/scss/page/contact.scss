@@ -8,3 +8,18 @@
     font-size: calc(var(--base-fs) * 1.15);
   }
 }
+
+.contact-section {
+  h2 {
+    font-size: calc(var(--base-fs) * 2.75);
+    text-align: center;
+  }
+
+  a {
+    padding-inline: calc(var(--base-padding) * 4);
+
+    @media screen and (width > 768px) {
+      padding-inline: calc(var(--base-padding) * 3);
+    }
+  }
+}
