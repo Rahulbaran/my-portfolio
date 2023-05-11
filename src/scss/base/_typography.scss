@@ -42,6 +42,11 @@ strong {
 
   .section-wrapper {
     min-block-size: 100vh;
+
+    &:not(:first-of-type) {
+      padding-block: calc(var(--base-padding) * 12)
+        calc(var(--base-padding) * 2);
+    }
   }
 
   .section-heading {
