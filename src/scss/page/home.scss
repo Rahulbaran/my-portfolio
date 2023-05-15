@@ -1,12 +1,13 @@
 .home-wrapper {
+  animation: home-animation 3000ms cubic-bezier(0, 0, 0.2, 1) 1;
+
   .intro {
     margin-block-end: calc(var(--base-margin) * 3);
-    animation: intro-animation 1500ms ease-out 1;
 
     p {
       word-spacing: 5px;
-      font-size: calc(var(--base-fs) * 1.25);
-      margin-block-end: calc(var(--base-margin) * 1.5);
+      font-size: calc(var(--base-fs) * 1.2);
+      margin-block-end: var(--base-margin);
     }
 
     h1 {
@@ -27,32 +28,24 @@
 
   .details {
     inline-size: min(90%, 32em);
-    animation: details-animation 1500ms ease-out 1;
 
     a {
-      margin-block-start: calc(var(--base-margin) * 6);
+      margin-block-start: calc(var(--base-margin) * 5);
     }
   }
 }
 
 /* Media query */
 @media (prefers-reduced-motion) {
-  .details,
-  .intro {
+  .home-wrapper {
     animation: none;
   }
 }
 
 /* Keyframes */
-@keyframes intro-animation {
+@keyframes home-animation {
   from {
-    translate: 0 -50px;
-    opacity: 0;
-  }
-}
-@keyframes details-animation {
-  from {
-    translate: 0 50px;
+    translate: 0 -100px;
     opacity: 0;
   }
 }
