@@ -96,6 +96,7 @@
 
       <!----------------------- Main Container  --------------------->
       <main class="container">
+        <!-------------- Home Section --------------->
         <section
           class="flex flex-col align-flex-start justify-center section-wrapper home-wrapper"
           id="home"
@@ -120,14 +121,76 @@
           </div>
         </section>
 
+        <!-------------- About Section ------------->
         <section class="section-wrapper about-wrapper" id="about">
           <h2 class="flex align-center justify-center gap-1 section-heading">
             <span></span>
             <span>About Me</span>
             <span></span>
           </h2>
+
+          <div
+            class="flex flex-col align-center gap-y-8 about-content-container"
+          >
+            <div class="flex flex-col gap-2 about">
+              <p>
+                Hello! My name is Rahul and I build Websites & Web Applications.
+                My interest in web development started back in 2021, when due to
+                COVID I was in home and had nothing to do except completing my
+                college assignments, So I tried learning HTML & CSS.
+              </p>
+              <p>
+                From that time I've built many projects, You can checkout some
+                of these in
+                <a href="#projects">Projects</a> section. You can also checkout
+                my
+                <a href="https://github.com/rahulbaran" target="_blank"
+                  >github</a
+                >
+                account for more details.
+              </p>
+              <p>
+                I'm open to <strong>Job</strong> opportunities where I can
+                contribute, learn and grow. If you have a good opportunity that
+                matches my skills and experience then don't hesitate to contact
+                me.
+              </p>
+              <p>
+                Here are a few technologies I have been working with recently:
+              </p>
+
+              <div class="flex gap-8 skills-container">
+                <ul>
+                  <li><code>CSS</code></li>
+                  <li><code>JavaScript (ES6+)</code></li>
+                  <li><code>React</code></li>
+                </ul>
+
+                <ul>
+                  <li><code>Node.js</code></li>
+                  <li><code>MySQL</code></li>
+                  <li><code>MongoDB</code></li>
+                </ul>
+              </div>
+            </div>
+            <div class="avatar-wrapper">
+              <picture>
+                <source srcset="/avatar/avatar.avif" type="image/avif" />
+                <source srcset="/avatar/avatar.webp" type="image/webp" />
+                <img
+                  src="/avatar/avatar.jpg"
+                  alt="Avatar"
+                  loading="lazy"
+                  decoding="async"
+                  width="300"
+                  height="300"
+                />
+              </picture>
+            </div>
+          </div>
         </section>
 
+        <!-- ---------- Projects Section -------------->
         <section class="section-wrapper projects-wrapper" id="projects">
           <h2 class="flex align-center justify-center gap-1 section-heading">
             <span></span>
