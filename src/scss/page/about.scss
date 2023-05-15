@@ -10,7 +10,11 @@
     list-style-position: inside;
 
     li {
-      font-size: var(--base-fs);
+      font-size: calc(var(--base-fs) * 1.05);
+
+      &:not(:last-of-type) {
+        margin-block-end: var(--base-margin);
+      }
     }
   }
 
@@ -24,11 +28,11 @@
       object-fit: cover;
       border-radius: calc(var(--base-br) * 0.25);
       translate: -10px -10px;
-      filter: hue-rotate(50deg);
+      filter: grayscale(80%);
       transition: filter 500ms ease;
 
       &:hover {
-        filter: hue-rotate(0deg);
+        filter: grayscale(0%);
       }
     }
   }
