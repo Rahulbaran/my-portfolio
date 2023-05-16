@@ -3,7 +3,7 @@ import "../scss/main.scss";
 /* Selectors */
 import selectors from "./selectors";
 
-// Functionality to handle navigation
+// Functionality to handle navigation //
 window.onload = () => {
   if (window.matchMedia("(min-width: 768.001px)").matches) {
     selectors.navigationContainer.classList.add("navigation-visible");
@@ -24,7 +24,7 @@ selectors.hamburgerBtn.addEventListener("click", function () {
   selectors.navigationContainer.classList.toggle("navigation-visible");
 });
 
-// Functionality to add shadow to navigation header
+// Functionality to add shadow to navigation header //
 window.addEventListener("scroll", () => {
   if (document.documentElement.scrollTop > 50 || document.body.scrollTop > 50) {
     selectors.navigationHeader.style.boxShadow =
