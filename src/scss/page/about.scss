@@ -19,21 +19,15 @@
   }
 
   .avatar-wrapper {
-    border: 2px solid var(--text-color);
+    border: 2px solid var(--avatar-container-border);
     border-radius: calc(var(--base-br) * 0.25);
 
     img {
       inline-size: 20em;
-      block-size: 18em;
+      block-size: 20em;
       object-fit: cover;
-      border-radius: calc(var(--base-br) * 0.25);
+      border-radius: calc(var(--base-br) * 0.3);
       translate: -10px -10px;
-      filter: grayscale(80%);
-      transition: filter 500ms ease;
-
-      &:hover {
-        filter: grayscale(0%);
-      }
     }
   }
 

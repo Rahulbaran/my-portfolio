@@ -55,7 +55,7 @@ strong {
     span:first-of-type,
     span:last-of-type {
       block-size: 1px;
-      background-color: var(--text-color);
+      background-color: var(--section-heading-border-bg);
       inline-size: min(20vw, 200px);
     }
 
@@ -66,7 +66,7 @@ strong {
 
   @media screen and (width > 768px) {
     .section-heading {
-      span:nth-of-type(2) {
+      span:last-of-type {
         font-size: calc(var(--base-fs) * 2);
       }
     }

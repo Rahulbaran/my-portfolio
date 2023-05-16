@@ -22,7 +22,8 @@
   --lightest-blue: hwb(0 95% 0%);
   --light-blue: hwb(250 88% 0%);
   --regular-blue: hwb(224 56% 9%);
-  --blue: hwb(228 45% 17%);
+  --semi-blue: hwb(228 30% 17%);
+  --dark-blue: hwb(224 20% 30%);
 
   /* Dark Mode Color Pallete */
   --lightest-orange: hwb(37 89% 6%);
@@ -31,9 +32,31 @@
   --dark-cyan: hwb(187 30% 60%);
   --darkest-cyan: hwb(187 21% 72%);
 
-  /* Website Colors */
+  /*
+  * *** Website Colors *** *
+  */
   --shadow: 0 0% 100%;
   --body-bg: var(--lightest-blue);
+  --header-bg: hwb(0 95% 0% /0.8);
+  --heading-color: var(--dark-blue);
+  --text-color: var(--semi-blue);
+  --link-color: var(--dark-blue);
+  --section-heading-border-bg: var(--regular-blue);
+
+  /* Header */
+  --hamburger-bg-img: var(--regular-blue), var(--dark-blue);
+  --hamburger-bg: var(--semi-blue);
+  --navigation-bg: var(--light-blue);
+
+  /* Buttons */
+  --primary-btn-text: var(--light-blue);
+  --primary-btn-bg: var(--dark-blue);
+
+  /* Scrollbar */
+  --scroll-thumb-bg: var(--regular-blue);
+
+  /* Avatar border */
+  --avatar-container-border: var(--regular-blue);
 
   @media (prefers-color-scheme: dark) {
     --body-bg: var(--dark-cyan);
@@ -41,6 +64,7 @@
     --link-color: var(--lightest-orange);
     --text-color: var(--light-orange);
     --heading-color: var(--lightest-orange);
+    --section-heading-border-bg: var(--light-orange);
 
     /* Header */
     --hamburger-bg-img: var(--lightest-orange), var(--light-orange);
@@ -53,5 +77,8 @@
 
     /* Scrollbar */
     --scroll-thumb-bg: var(--darkest-cyan);
+
+    /* Avatar border */
+    --avatar-container-border: var(--light-orange);
   }
 }
