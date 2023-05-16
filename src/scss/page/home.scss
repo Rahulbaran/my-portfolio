@@ -6,8 +6,9 @@
 
     p {
       word-spacing: 5px;
-      font-size: calc(var(--base-fs) * 1.4);
+      font-size: calc(var(--base-fs) * 1.5);
       margin-block-end: var(--base-margin);
+      font-weight: var(--fw-medium);
     }
 
     h1 {
@@ -32,7 +33,7 @@
   }
 }
 
-/* Media query */
+/* Media queries */
 @media (prefers-reduced-motion) {
   .home-wrapper {
     animation: none;
