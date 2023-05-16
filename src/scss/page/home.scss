@@ -6,7 +6,7 @@
 
     p {
       word-spacing: 5px;
-      font-size: calc(var(--base-fs) * 1.2);
+      font-size: calc(var(--base-fs) * 1.4);
       margin-block-end: var(--base-margin);
     }
 
@@ -14,10 +14,7 @@
       span {
         font-size: calc(var(--base-fs) * 3.5);
         font-weight: 900;
-
-        &:first-of-type {
-          color: var(--heading-color);
-        }
+        color: var(--heading-color);
 
         &:last-of-type {
           line-height: calc(var(--base-lh) * 0.7);
@@ -39,6 +36,20 @@
 @media (prefers-reduced-motion) {
   .home-wrapper {
     animation: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .home-wrapper .intro h1 span:first-of-type {
+    color: var(--heading-color);
+  }
+}
+
+@media screen and (width > 768px) {
+  .home-wrapper {
+    .intro p {
+      font-size: calc(var(--base-fs) * 1.25);
+    }
   }
 }
 
