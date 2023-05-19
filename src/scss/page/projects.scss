@@ -16,6 +16,11 @@
     block-size: 400px;
     box-shadow: 0 0 6px hwb(var(--shadow) / 0.3);
     border-radius: calc(var(--base-br) * 0.2);
+    transition: box-shadow 200ms ease-in-out;
+
+    &:hover {
+      box-shadow: 0 3px 10px hwb(var(--shadow) / 0.25);
+    }
 
     &-content {
       position: absolute;
@@ -37,6 +42,7 @@
 
       code {
         font-size: var(--base-fs);
+        color: var(--text-color);
       }
     }
 
@@ -48,6 +54,7 @@
       i {
         font-size: calc(var(--base-fs) * 1.75);
         color: var(--text-color);
+        padding: calc(var(--base-padding) * 0.2);
       }
 
       a:hover i {
