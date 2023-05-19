@@ -10,6 +10,7 @@ html {
   font-size: 75%;
   scrollbar-width: thin;
   scrollbar-color: var(--scroll-thumb-bg) transparent;
+  user-select: none;
 
   @media screen and (width > 30em) {
     font-size: 87.5%;
