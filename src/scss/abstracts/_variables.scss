@@ -43,6 +43,7 @@
   --link-color: var(--dark-blue);
   --section-heading-border-bg: var(--regular-blue);
   --project-content-bg: hwb(0 95% 5% /0.9);
+  --project-img-bg: hwb(0 95% 20% /0.6);
 
   /* Header */
   --hamburger-bg-img: var(--regular-blue), var(--dark-blue);
@@ -58,6 +59,7 @@
 
   /* Avatar border */
   --avatar-container-border: var(--regular-blue);
+  --avatar-top-bg: hwb(0 95% 20% /0.7);
 
   @media (prefers-color-scheme: dark) {
     --body-bg: var(--dark-cyan);
@@ -67,6 +69,7 @@
     --heading-color: var(--lightest-orange);
     --section-heading-border-bg: var(--light-orange);
     --project-content-bg: hwb(187 20% 70% / 0.9);
+    --project-img-bg: hwb(187 20% 70% / 0.7);
 
     /* Header */
     --hamburger-bg-img: var(--lightest-orange), var(--light-orange);
@@ -82,5 +85,6 @@
 
     /* Avatar border */
     --avatar-container-border: var(--light-orange);
+    --avatar-top-bg: hwb(187 20% 70% / 0.6);
   }
 }
