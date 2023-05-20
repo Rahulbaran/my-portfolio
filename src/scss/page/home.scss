@@ -28,6 +28,7 @@
 
     a {
       margin-block-start: calc(var(--base-margin) * 5);
+      padding-inline: calc(var(--base-padding) * 2);
     }
   }
 }
