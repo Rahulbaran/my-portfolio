@@ -5,7 +5,11 @@
 
   p {
     text-align: center;
-    font-size: calc(var(--base-fs) * 1.15);
+    font-size: calc(var(--base-fs) * 1.2);
+
+    @media screen and (width > 768px) {
+      font-size: calc(var(--base-fs) * 1.05);
+    }
   }
 }
 
