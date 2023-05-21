@@ -1,8 +1,12 @@
 .about-content-container {
   margin-block-start: calc(var(--base-margin) * 4);
 
-  p a:hover {
-    text-decoration: underline 1px solid currentcolor;
+  .about p {
+    font-size: calc(var(--base-fs) * 1.2);
+
+    a:hover {
+      text-decoration: underline 1px solid currentcolor;
+    }
   }
 
   .skills-container ul {
