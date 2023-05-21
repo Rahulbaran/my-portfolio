@@ -88,7 +88,6 @@
 
 .navigation-menu {
   list-style-type: none;
-  animation: navigation-animation 500ms ease-out 1;
 }
 
 .navigation-link {
@@ -103,15 +102,11 @@
   }
 }
 
-.resume-link-wrapper {
-  animation: resume-button-animation 500ms ease-out 1;
+.resume-link-wrapper a {
+  letter-spacing: 0.5px;
 
-  a {
-    letter-spacing: 0.5px;
-
-    @media screen and (width <= 768px) {
-      padding-inline: calc(var(--base-padding) * 6);
-    }
+  @media screen and (width <= 768px) {
+    padding-inline: calc(var(--base-padding) * 6);
   }
 }
 
@@ -139,14 +134,19 @@
 
   .navigation-menu {
     flex-direction: row;
+    animation: navigation-animation 500ms ease-out 1;
   }
 
   .navigation-link {
     font-size: var(--base-fs);
   }
 
-  .resume-link-wrapper a {
-    padding-block: calc(var(--base-padding) * 1.1);
+  .resume-link-wrapper {
+    animation: resume-button-animation 500ms ease-out 1;
+
+    a {
+      padding-block: calc(var(--base-padding) * 1.1);
+    }
   }
 }
 
