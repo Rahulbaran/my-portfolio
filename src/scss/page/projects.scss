@@ -53,12 +53,8 @@
 
       i {
         font-size: calc(var(--base-fs) * 1.75);
-        color: var(--text-color);
+        color: var(--icon-color);
         padding: calc(var(--base-padding) * 0.2);
-      }
-
-      a:hover i {
-        color: var(--link-color);
       }
     }
 
