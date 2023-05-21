@@ -50,13 +50,17 @@
     align-items: flex-start;
     gap: 0 calc(var(--base-gap) * 6);
 
+    .about p {
+      font-size: calc(var(--base-fs) * 1.05);
+    }
+
     .avatar-wrapper img {
       inline-size: 18em;
       block-size: 18em;
     }
 
     .skills-container ul li {
-      font-size: calc(var(--base-fs) * 0.9);
+      font-size: calc(var(--base-fs) * 0.8);
     }
   }
 }
