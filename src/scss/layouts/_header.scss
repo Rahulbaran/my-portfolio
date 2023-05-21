@@ -88,6 +88,7 @@
 
 .navigation-menu {
   list-style-type: none;
+  animation: navigation-animation 500ms ease-out 1;
 }
 
 .navigation-link {
@@ -102,11 +103,15 @@
   }
 }
 
-.resume-link-wrapper a {
-  letter-spacing: 0.5px;
+.resume-link-wrapper {
+  animation: resume-button-animation 500ms ease-out 1;
 
-  @media screen and (width <= 768px) {
-    padding-inline: calc(var(--base-padding) * 6);
+  a {
+    letter-spacing: 0.5px;
+
+    @media screen and (width <= 768px) {
+      padding-inline: calc(var(--base-padding) * 6);
+    }
   }
 }
 
@@ -134,7 +139,6 @@
 
   .navigation-menu {
     flex-direction: row;
-    animation: navigation-animation 500ms ease-out 1;
   }
 
   .navigation-link {
@@ -149,7 +153,14 @@
 /* Keyframes */
 @keyframes navigation-animation {
   from {
-    translate: -50px 0;
+    translate: 0 -50px;
+    opacity: 0;
+  }
+}
+
+@keyframes resume-button-animation {
+  from {
+    translate: 0 -80px;
     opacity: 0;
   }
 }
