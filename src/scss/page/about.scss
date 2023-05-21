@@ -9,12 +9,12 @@
     list-style-type: circle;
     list-style-position: inside;
 
-    li {
-      font-size: calc(var(--base-fs) * 1.05);
+    li:not(:last-of-type) {
+      margin-block-end: var(--base-margin);
+    }
 
-      &:not(:last-of-type) {
-        margin-block-end: var(--base-margin);
-      }
+    code {
+      font-size: var(--base-fs);
     }
   }
 
@@ -59,7 +59,7 @@
       block-size: 18em;
     }
 
-    .skills-container ul li {
+    .skills-container ul code {
       font-size: calc(var(--base-fs) * 0.8);
     }
   }
