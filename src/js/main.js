@@ -37,15 +37,15 @@ window.addEventListener("scroll", () => {
 
 // Functionality to reveal on scrolling //
 ScrollReveal({
-  duration: 2000,
-  delay: 500,
+  duration: 1000,
+  delay: 250,
   easing: "cubic-bezier(0.5, 0, 0, 1)",
   origin: "top",
   reset: false
 }).reveal(".project");
 
 ScrollReveal({
-  duration: 1500,
+  duration: 1000,
   easing: "cubic-bezier(0.5, 0, 0, 1)",
   origin: "top",
   reset: false
