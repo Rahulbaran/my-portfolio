@@ -1,8 +1,7 @@
 .home-wrapper {
-  animation: home-animation 3000ms cubic-bezier(0, 0, 0.2, 1) 1;
-
   .intro {
     margin-block-end: calc(var(--base-margin) * 3);
+    animation: home-animation 2000ms cubic-bezier(0.2, 0, 0, 1) 1;
 
     p {
       word-spacing: 5px;
@@ -25,6 +24,7 @@
 
   .details {
     inline-size: min(90%, 32em);
+    animation: home-animation 2000ms cubic-bezier(0.2, 0, 0, 1) 100ms 1;
 
     p {
       font-size: calc(var(--base-fs) * 1.2);
@@ -39,7 +39,7 @@
 
 /* Media queries */
 @media (prefers-reduced-motion) {
-  .home-wrapper {
+  .home-wrapper :where(.intro, .details) {
     animation: none;
   }
 }
