@@ -42,8 +42,11 @@
   --text-color: var(--semi-blue);
   --link-color: var(--dark-blue);
   --section-heading-border-bg: var(--regular-blue);
+
+  /* Project Section */
   --project-content-bg: hwb(0 95% 5% /0.9);
   --project-img-bg: hwb(0 95% 20% /0.6);
+  --icon-color: hwb(224 10% 20%);
 
   /* Header */
   --hamburger-bg-img: var(--regular-blue), var(--dark-blue);
@@ -68,8 +71,11 @@
     --text-color: var(--light-orange);
     --heading-color: var(--lightest-orange);
     --section-heading-border-bg: var(--light-orange);
+
+    /* Projects Section */
     --project-content-bg: hwb(187 20% 70% / 0.9);
     --project-img-bg: hwb(187 20% 70% / 0.7);
+    --icon-color: hwb(187 31% 5%);
 
     /* Header */
     --hamburger-bg-img: var(--lightest-orange), var(--light-orange);
