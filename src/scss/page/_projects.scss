@@ -35,7 +35,7 @@
       h3 > * {
         font-size: calc(var(--base-fs) * 2);
         transition: color 200ms ease-in-out;
-        
+
         &:hover {
           color: var(--icon-color);
         }
@@ -91,7 +91,7 @@
       padding: calc(var(--base-padding) * 3) calc(var(--base-padding) * 2);
       gap: calc(var(--base-gap) * 3);
 
-      h3 > *{
+      h3 > * {
         font-size: calc(var(--base-fs) * 1.75);
       }
 
@@ -127,8 +127,7 @@
     }
   }
 
-  .project:nth-of-type(2),
-  .project:last-of-type {
+  .project:nth-of-type(even) {
     .project-content {
       grid-area: 1 / 1 / 2 / 2;
     }
